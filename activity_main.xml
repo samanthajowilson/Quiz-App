@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="The Office Quiz"/>
+        android:text="The Office Quiz"
+        android:layout_gravity="center"/>
     <TextView
         android:id="@+id/questionOne"
         android:layout_width="wrap_content"
@@ -30,49 +31,206 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
-        android:paddingTop="8dp"
-        android:layout_below="@+id/questionOne">
+        android:paddingTop="8dp">
         <RadioButton
+            android:onClick="onRadioButtonClicked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/oneA"
             android:text="a. Kelly"/>
 
         <RadioButton
+            android:onClick="onRadioButtonClicked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/oneB"
             android:text="b. Phyllis"/>
         <RadioButton
+            android:onClick="onRadioButtonClicked"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/oneC"
             android:text="c. Meredith"/>
     </RadioGroup>
+    <Button
+        android:id="@+id/buttonOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitOne"
+        android:text="submit"/>
     <TextView
         android:id="@+id/questionTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
-        android:layout_below="@+id/radioOne"
+
         android:text="2. What's Gabe's middle name?"/>
     <RadioGroup
         android:id="@+id/radioTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
-        android:paddingTop="8dp"
-        android:layout_below="@+id/questionTwo">
+        android:paddingTop="8dp">
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/twoA"
         android:text="a. Sabrina"/>
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/twoB"
         android:text="b. Sarah"/>
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/twoC"
         android:text="c. Susan"/>
     </RadioGroup>
+    <Button
+        android:id="@+id/buttonTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitTwo"
+        android:text="submit"/>
+    <TextView
+        android:id="@+id/questionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. What does Michael pick as his username when he signs up for an online dating site?"
+        android:paddingLeft="16dp"/>
+    <RadioGroup
+        android:id="@+id/radioThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threeA"
+            android:text="a. LittleKidLover"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threeB"
+            android:text="b. IAmTheBoss"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threeC"
+            android:text="c. HappyCuddler"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitThree"
+        android:text="submit"/>
+    <TextView
+        android:id="@+id/questionFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. How long had Jim and Pam been dating when he bought her engagement ring?"
+        android:paddingLeft="16dp"/>
+    <RadioGroup
+        android:id="@+id/radioFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourA"
+            android:text="a. One Day"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. One Week"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. One Month"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitFour"
+        android:text="submit"/>
+    <TextView
+        android:id="@+id/questionFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. What is Erin's real first name?"
+        android:paddingLeft="16dp"/>
+    <RadioGroup
+        android:id="@+id/radioFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Angela"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Talulah"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Kelly"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitFive"
+        android:text="submit"/>
+    <TextView
+    android:id="@+id/questionSix"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="6. When Jim thinks Michael is eating ice cream for breakfast, what is he actually eating?"
+    android:paddingLeft="16dp"/>
+    <RadioGroup
+        android:id="@+id/radioSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a. Sour Cream and Sprinkles"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b. Mayonaise and black olives"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="c. Whipped cream and ketchup"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/buttonSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:onClick="submitSix"
+        android:text="submit"/>
 </LinearLayout>
 </ScrollView>
